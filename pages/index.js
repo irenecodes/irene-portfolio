@@ -1,20 +1,20 @@
-import Head from "next/head";
-import Link from "next/link";
+import Head from 'next/head';
+import Link from 'next/link';
 
-import { useState, useCallback, useEffect } from "react";
+import { useState, useCallback, useEffect } from 'react';
 
 // importing components
 const SocialIcons = loadable(() =>
-  import("../components/social-icons/social-icons-component")
+  import('../components/social-icons/social-icons-component')
 );
 
 // importing module styles
-import homeStyles from "../styles/Home.module.scss";
+import homeStyles from '../styles/Home.module.scss';
 
-import { motion } from "framer-motion";
-import loadable from "@loadable/component";
-import LazyLoad from "react-lazyload";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { motion } from 'framer-motion';
+import loadable from '@loadable/component';
+import LazyLoad from 'react-lazyload';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faHtml5,
   faCss3Alt,
@@ -26,11 +26,13 @@ import {
   faGit,
   faAccessibleIcon,
   faAngular,
+  faAws,
+  faJava,
   faFigma,
   faBootstrap,
-} from "@fortawesome/free-brands-svg-icons";
+} from '@fortawesome/free-brands-svg-icons';
 
-import { faExpand } from "@fortawesome/free-solid-svg-icons";
+import { faExpand } from '@fortawesome/free-solid-svg-icons';
 
 const svgVariants = {
   hidden: {
@@ -51,7 +53,7 @@ const pathVariants = {
     opacity: 1,
     transition: {
       duration: 2,
-      ease: "easeInOut",
+      ease: 'easeInOut',
     },
   },
 };
@@ -66,7 +68,7 @@ const pathVariants2 = {
     pathLength: 1,
     transition: {
       duration: 4,
-      ease: "easeInOut",
+      ease: 'easeInOut',
     },
   },
 };
@@ -161,8 +163,8 @@ export default function Home() {
             animate={{ y: 0 }}
           >
             <h1>
-              Irene Truong is a web developer specializing in{" "}
-              <span>Front-End Development</span>. She brings{" "}
+              Irene Truong is a web developer specializing in{' '}
+              <span>Front-End Development</span>. She brings{' '}
               <span>experience</span> in both start-up and corporate settings.
             </h1>
             <div>
@@ -199,10 +201,10 @@ export default function Home() {
           </p>
           <p>
             Professionally, I perform accessibility enhancements for websites
-            and have worked with a variety of codebases, new and old. I prefer
-            to write in either React.js or Vue.js for more modern sites. This
-            website is written in React.js ☺️ I also bring professional
-            experience working with Figma as part of my growing skillset.
+            and have worked with a variety of codebases, new and old. I write in
+            Angular, React, or Vue for modern sites. This website is written in
+            React.js ☺️ I also bring professional experience working with Figma
+            as part of my growing skillset.
           </p>
           <p>
             I have worked in both start-up and big corporation environments
@@ -211,6 +213,11 @@ export default function Home() {
             to thrive in both capacities, pick up tech and tools quickly, and
             contribute meaningfully.
           </p>
+          <p>
+            Currently, I am working in public service building enterprise web
+            applications in Angular.
+          </p>
+
           <p>
             Outside of coding, I am a self-proclaimed professional cat petter,
             play Fall Guys and Pokémon GO, and love to take short walks by
@@ -233,11 +240,16 @@ export default function Home() {
               </li>
               <li>
                 <FontAwesomeIcon aria-hidden="true" icon={faSass} />
-                <p>SCSS/SASS</p>
+                <p>
+                  <abbr title="Sassy CSS">SCSS</abbr>/
+                  <abbr title="syntactically awesome style sheets">SASS</abbr>
+                </p>
               </li>
               <li>
                 <FontAwesomeIcon aria-hidden="true" icon={faLess} />
-                <p>Less</p>
+                <p>
+                  <abbr title="Leaner Style Sheets">Less</abbr>{' '}
+                </p>
               </li>
               <li>
                 <FontAwesomeIcon aria-hidden="true" icon={faBootstrap} />
@@ -274,9 +286,13 @@ export default function Home() {
               <li>
                 <FontAwesomeIcon aria-hidden="true" icon={faAccessibleIcon} />
                 <p>
-                  <abbr title="Web Content Accessibility Guidelines">WCAG</abbr>{" "}
+                  <abbr title="Web Content Accessibility Guidelines">WCAG</abbr>{' '}
                   2.0
                 </p>
+              </li>
+              <li>
+                <FontAwesomeIcon aria-hidden="true" icon={faAngular} />
+                <p>Angular</p>
               </li>
             </ul>
           </div>
@@ -284,18 +300,18 @@ export default function Home() {
             <h2>Levelling up on</h2>
             <ul>
               <li>
-                <FontAwesomeIcon aria-hidden="true" icon={faAngular} />
-                <p>Angular</p>
+                <FontAwesomeIcon aria-hidden="true" icon={faAws} />
+                <p>
+                  <abbr title="Amazon Web Services">AWS</abbr>{' '}
+                </p>
               </li>
               <li>
                 <FontAwesomeIcon aria-hidden="true" icon={faFigma} />
                 <p>Figma</p>
               </li>
               <li>
-                <LazyLoad height={40}>
-                  <img src="tech-icons/redux.svg" alt="" />
-                </LazyLoad>
-                <p>Redux</p>
+                <FontAwesomeIcon aria-hidden="true" icon={faJava} />
+                <p>Java</p>
               </li>
             </ul>
           </div>
@@ -321,7 +337,7 @@ export default function Home() {
             <p>
               Client site built at Mobile Fringe. Front-end built with Vue.js to
               extract dynamic content from CMS. Utilizes Vuex for state
-              management, and Vue-Router for routing.{" "}
+              management, and Vue-Router for routing.{' '}
             </p>
             <p className="tech-used">
               <strong>Used:</strong>Vue.js, Nuxt.js, HTML5, SCSS, Bootstrap,

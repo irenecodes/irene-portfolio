@@ -1,4 +1,4 @@
-@import "partials/variables";
+@import 'partials/variables';
 
 .socialContainer {
   margin-top: 88px;
@@ -21,6 +21,9 @@
   }
   p {
     margin-bottom: 36px;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
