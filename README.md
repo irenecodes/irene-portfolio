@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Irene's portfolio site.
 
-Hello! Thank you for visiting the source code of my portfolio site found at [`irenetruong.com`](https://irenetruong.com/).
+Hello! Thank you for visiting the source code of my portfolio site found at [`irenetruong.tech`](https://irenetruong.tech/).
 
 Features:
 
