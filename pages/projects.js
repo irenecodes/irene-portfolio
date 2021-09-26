@@ -1,61 +1,62 @@
-import Head from "next/head";
+import Head from 'next/head';
+import React from 'react';
 
 // import data
-import PROJECTS_DATA from "../components/projects.data";
+import PROJECTS_DATA from '../components/projects.data';
 
-import loadable from "@loadable/component";
+import loadable from '@loadable/component';
 const ProjectCard = loadable(() =>
-  import("../components/project-card/project-card.component")
+  import('../components/project-card/project-card.component')
 );
 
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 
 class Projects extends React.Component {
   constructor() {
     super();
     this.state = {
       projectsData: PROJECTS_DATA,
-      currentFilter: "ALL",
+      currentFilter: 'ALL',
       skillsList: [
         {
           id: 1,
-          name: "ALL",
+          name: 'ALL',
         },
         {
           id: 2,
-          name: "React.js",
+          name: 'React.js',
         },
         {
           id: 3,
-          name: "Vue.js",
+          name: 'Vue.js',
         },
         {
           id: 4,
-          name: "Bootstrap",
+          name: 'Bootstrap',
         },
         {
           id: 5,
-          name: "JavaScript",
+          name: 'JavaScript',
         },
         {
           id: 6,
-          name: "HTML5",
+          name: 'HTML5',
         },
         {
           id: 7,
-          name: "CSS3",
+          name: 'CSS3',
         },
         {
           id: 8,
-          name: "LESS",
+          name: 'LESS',
         },
         {
           id: 9,
-          name: "SASS/SCSS",
+          name: 'SASS/SCSS',
         },
         {
           id: 10,
-          name: "Mobile First",
+          name: 'Mobile First',
         },
       ],
     };
@@ -86,7 +87,7 @@ class Projects extends React.Component {
         pathLength: 1,
         transition: {
           duration: 3,
-          ease: "easeInOut",
+          ease: 'easeInOut',
         },
       },
     };
@@ -102,7 +103,7 @@ class Projects extends React.Component {
         pathLength: 1,
         transition: {
           duration: 2,
-          ease: "easeInOut",
+          ease: 'easeInOut',
         },
       },
     };
@@ -174,14 +175,14 @@ class Projects extends React.Component {
                 onClick={this.filterSkill}
                 key={skill.id}
                 value={skill.name}
-                className={`${currentFilter == skill.name ? "active-btn" : ""}`}
+                className={`${currentFilter == skill.name ? 'active-btn' : ''}`}
               >
                 {skill.name}
               </button>
             ))}
           </motion.ul>
 
-          {currentFilter == "ALL" ? (
+          {currentFilter == 'ALL' ? (
             <div className="project-card-list">
               {allProjects.map((project) => (
                 <ProjectCard key={project.id} project={project} />
