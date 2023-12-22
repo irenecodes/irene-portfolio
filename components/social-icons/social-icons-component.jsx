@@ -1,25 +1,11 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faTwitter,
-  faLinkedin,
-  faGithub,
-} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 export default function SocialIcons() {
   return (
     <>
       <nav>
         <ul className="social-icons-container">
-          <li>
-            <a
-              href="https://www.twitter.com/ireneycodes"
-              target="_blank"
-              aria-label="Go to Irene's Twitter page."
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon aria-hidden="true" icon={faTwitter} />
-            </a>
-          </li>
           <li>
             <a
               href="https://ca.linkedin.com/in/irene-truong"

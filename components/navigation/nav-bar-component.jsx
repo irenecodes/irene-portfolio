@@ -1,34 +1,50 @@
-import Link from "./Link";
-import { useState } from "react";
-import { useRouter } from "next/router";
+import Link from 'next/link';
+import { useState } from 'react';
+import { useRouter } from 'next/router';
+import NAV_BAR_DATA from './nav-bar.data';
 
-// import data
-import NAV_BAR_DATA from "./nav-bar.data";
-
-export default function NavBar(props) {
+// Custom Logo component
+const Logo = () => {
   const router = useRouter();
-  const [navBarData, setNavBarData] = useState(NAV_BAR_DATA);
   return (
-    <nav className="header-nav nav-wrapper">
-      <Link href="/">
-        <div className="logo-container">
-          {router.pathname == "/contact" ? (
-            <img src="/images/logoOnContact.svg" alt="Irene Truong's logo." />
-          ) : (
-            <img src="/images/logo-light-bg.svg" alt="Irene Truong's logo." />
-          )}
-        </div>
-      </Link>
+    <Link href="/">
+      <div className="logo-container">
+        {router.pathname === '/contact' ? (
+          <img src="/images/logoOnContact.svg" alt="Irene Truong's logo." />
+        ) : (
+          <img src="/images/logo-light-bg.svg" alt="Irene Truong's logo." />
+        )}
+      </div>
+    </Link>
+  );
+};
 
-      <ul className={`${router.pathname !== "/" ? "lighten-nav" : ""}`}>
-        {navBarData.map(({ id, href, displayName }) => (
+const NavigationLinks = ({ navBarData }) => {
+  const router = useRouter();
+  return (
+    <ul className={`${router.pathname !== '/' ? 'lighten-nav' : ''}`}>
+      {navBarData.map(({ id, href, displayName }) => {
+        const updatedClassName = router.pathname === href ? 'selected' : '';
+        return (
           <li key={id}>
-            <Link href={href}>
-              <a>{displayName}</a>
+            <Link href={href} className={updatedClassName}>
+              {displayName}
             </Link>
           </li>
-        ))}
-      </ul>
+        );
+      })}
+    </ul>
+  );
+};
+
+// Main NavBar component
+export default function NavBar() {
+  const [navBarData] = useState(NAV_BAR_DATA);
+
+  return (
+    <nav className="header-nav nav-wrapper">
+      <Logo />
+      <NavigationLinks navBarData={navBarData} />
     </nav>
   );
 }
