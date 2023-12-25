@@ -1,7 +1,7 @@
-import Link from "next/link";
-import Head from "next/head";
+import Link from 'next/link';
+import Head from 'next/head';
 
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 const svgVariants = {
   hidden: {
     x: -10,
@@ -23,7 +23,7 @@ const pathVariants = {
     pathLength: 1,
     transition: {
       duration: 3,
-      ease: "easeInOut",
+      ease: 'easeInOut',
     },
   },
 };
@@ -39,7 +39,7 @@ const pathVariants2 = {
     pathLength: 1,
     transition: {
       duration: 2,
-      ease: "easeInOut",
+      ease: 'easeInOut',
     },
   },
 };
@@ -96,8 +96,8 @@ export default function Custom404() {
         <motion.div animate={{ y: 50 }} className="error-content">
           <h1>Looks like the page you're looking for doesn't exist.</h1>
 
-          <Link href="/">
-            <a className="btn-primary">Go to home page</a>
+          <Link legacyBehavior href="/" className="btn-primary">
+            Go to home page
           </Link>
         </motion.div>
       </section>

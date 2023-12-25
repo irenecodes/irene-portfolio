@@ -1,8 +1,8 @@
-import Head from "next/head";
+import Head from 'next/head';
 
-import LazyLoad from "react-lazyload";
+import LazyLoad from 'react-lazyload';
 
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 
 export default function Contact() {
   return (
@@ -50,7 +50,6 @@ export default function Contact() {
                   required
                   cols="30"
                   rows="10"
-                  name="message"
                 ></textarea>
               </div>
 

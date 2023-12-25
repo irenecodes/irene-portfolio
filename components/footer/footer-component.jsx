@@ -1,4 +1,4 @@
-import SocialIcons from "../social-icons/social-icons-component";
+import SocialIcons from '../social-icons/social-icons-component';
 
 export default function PersistFooter() {
   return (
@@ -6,7 +6,7 @@ export default function PersistFooter() {
       <footer>
         <div className="social-and-credits">
           <SocialIcons />
-          <p>All rights reserved. v1.0</p>
+          <p>All rights reserved.</p>
         </div>
       </footer>
     </>
