@@ -8,6 +8,7 @@ const PROJECTS_DATA = [
     skills: [
       'Pub/Sub',
       'Node.js',
+      'PostgreSQL',
       'Express',
       'TypeScript',
       'JavaScript',
@@ -20,7 +21,7 @@ const PROJECTS_DATA = [
   {
     id: 2,
     title: 'IRCC Tools',
-    description: `<p>While working with the Federal Government, I worked with Agile Software Development. I started as an Angular Developer writing <b>boilerplates and documentation</b> for other teams to template their custom projects while adhering to security processes and restraints. I then moved on to writing tests in Jasmine and Karma for a <b>Citizenship web application</b>, followed by coding from scratch a <b>case processing tool</b> in Angular, Jasmine, and Karma.</p> I then moved onto becoming an AWS/Cloud Developer to update architecture designs, deployed application code, write Infrastructire as Code in AWS CloudFormation, provisioned relevant services, monitored logs, and guarded IAM policies.`,
+    description: `<p>While working with the Federal Government, I worked with Agile Software Development. I started as an Angular Developer, writing <b>boilerplate code and documentation</b> for other teams to template their custom projects while adhering to security processes and restraints. I then moved on to writing tests in Jasmine and Karma for a <b>Citizenship web application</b>, followed by coding from scratch a <b>case processing tool</b> in Angular, Jasmine, and Karma.</p> I then moved on to becoming an AWS/Cloud Developer where I updated architecture diagrams, deployed application code, wrote Infrastructure as Code in AWS CloudFormation, provisioned relevant services, monitored logs, and guarded IAM policies.`,
     skills: ['Angular', 'Unit Testing', 'TypeScript', 'SQL', 'AWS'],
   },
   {
