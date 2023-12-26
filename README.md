@@ -4,7 +4,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Irene's portfolio site.
 
-Hello! Thank you for visiting the source code of my portfolio site found at [`irene-truong.netlify.app`](irene-truong.netlify.app).
+Hello! Thank you for visiting the source code of my portfolio site found at [`https://irene-truong.netlify.app/`](https://irene-truong.netlify.app/).
 
 Features:
 

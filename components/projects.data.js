@@ -55,7 +55,7 @@ const PROJECTS_DATA = [
       'Responsive Web Design',
       'Figma (asset edits and slicing)',
     ],
-    githubUrl: 'https://github.com/irenecodes/irene-portfolio-next',
+    githubUrl: 'https://github.com/irenecodes/irene-portfolio',
   },
   {
     id: 8,
