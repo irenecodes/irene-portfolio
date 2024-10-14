@@ -1,0 +1,8 @@
+User-Agent: *
+Allow: /
+Disallow: /private/
+
+User-Agent: GPTBot
+Disallow: /
+
+Sitemap: https://irene-truong.netlify.app/sitemap.xml
