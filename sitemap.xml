@@ -1,0 +1,26 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://irene-truong.netlify.app</loc>
+    <lastmod>2024-10-14T15:02:24.021Z</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>https://irene-truong.netlify.app/projects</loc>
+    <lastmod>2023-12-01T00:00:00.000Z</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://irene-truong.netlify.app/contact</loc>
+    <lastmod>2021-01-01T00:00:00.000Z</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://irene-truong.netlify.app/404</loc>
+    <lastmod>2021-01-01T00:00:00.000Z</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.0</priority>
+  </url>
+</urlset>

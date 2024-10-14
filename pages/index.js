@@ -130,7 +130,7 @@ const Home = () => {
             animate={{ y: 0 }}
           >
             <h1>
-              Irene Truong is a software engineer specializing in{' '}
+              {fullName} is a software engineer specializing in{' '}
               <span>Full-Stack Development</span>. She brings{' '}
               <span>experience</span> in both start-up and corporate settings.
             </h1>
