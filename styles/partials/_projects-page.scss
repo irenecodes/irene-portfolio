@@ -40,15 +40,10 @@
   .card {
     flex: 0 0 45%;
     border: 1px solid $dark-main;
-    background: $white;
     margin-bottom: 60px;
-    position: relative;
   }
   .button-positioning {
-    position: absolute;
-    bottom: 30px;
-    left: 30px;
-    width: 90%;
+    margin-bottom: 24px;
   }
   img {
     border-bottom: 1px solid #e5e5e5;
@@ -110,7 +105,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 820px) {
   .projects-container {
     background-attachment: revert;
     svg {
@@ -120,10 +115,6 @@
   .project-card-list {
     .card {
       flex: 0 0 100%;
-    }
-    .button-positioning {
-      position: initial;
-      width: 100%;
     }
     .copy {
       min-height: initial;

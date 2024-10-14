@@ -1,12 +1,5 @@
 import Head from 'next/head';
 
-import { useState, useCallback, useEffect } from 'react';
-
-// importing components
-const SocialIcons = loadable(() =>
-  import('../components/social-icons/social-icons-component')
-);
-
 // importing module styles
 import homeStyles from '../styles/Home.module.scss';
 
@@ -29,8 +22,12 @@ import {
   faAws,
   faBootstrap,
 } from '@fortawesome/free-brands-svg-icons';
+import { fullName } from '../shared/constants';
 
 import { faExpand, faDatabase } from '@fortawesome/free-solid-svg-icons';
+const SocialIcons = loadable(() =>
+  import('../components/social-icons/social-icons-component')
+);
 
 const svgVariants = {
   hidden: {
@@ -71,39 +68,11 @@ const pathVariants2 = {
   },
 };
 
-export default function Home() {
-  const useMediaQuery = (width) => {
-    const [targetReached, setTargetReached] = useState(false);
-
-    const updateTarget = useCallback((e) => {
-      if (e.matches) {
-        setTargetReached(true);
-      } else {
-        setTargetReached(false);
-      }
-    }, []);
-
-    useEffect(() => {
-      const media = window.matchMedia(`(max-width: ${width}px)`);
-      media.addEventListener('change', updateTarget);
-
-      // Check on mount (callback is not called until a change occurs)
-      if (media.matches) {
-        setTargetReached(true);
-      }
-
-      return () => media.removeEventListener('change', updateTarget);
-    }, []);
-
-    return targetReached;
-  };
-
-  const isTablet = useMediaQuery(768);
-
+const Home = () => {
   return (
     <>
       <Head>
-        <title>Irene Truong | Software Engineer</title>
+        <title>{fullName} | Software Engineer</title>
       </Head>
       <LazyLoad height={900}>
         <section className="home-hero">
@@ -197,9 +166,9 @@ export default function Home() {
             website accessibility, working with diverse codebases — both modern
             and legacy. In the earlier stages of my journey, I delved into
             building web applications with Vue, and as time progressed, I've
-            gained valuable experience with Angular and React. With over 4 years
-            in the field, I thrive both independently and as part of
-            collaborative teams.
+            gained valuable experience with Angular and React. With over 5 years
+            of experience in the field, I thrive both independently and as part
+            of collaborative teams.
           </p>
           <p>
             I've worked at early-stage startups and larger corporations, gaining
@@ -209,8 +178,8 @@ export default function Home() {
             quickly, and contribute meaningfully.
           </p>
           <p>
-            Currently, I am working at an early-stage start up to help people
-            manage and prioritize their time better.
+            Currently, I am building and iterating at Fullscript, a supplement
+            dispensing platform and patient adherence tool.
           </p>
           <p>
             Beyond coding, I find joy in playing Pokémon GO and spending time
@@ -312,4 +281,6 @@ export default function Home() {
       </section>
     </>
   );
-}
+};
+
+export default Home;

@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import React from 'react';
 
-// import data
 import PROJECTS_DATA from '../components/projects.data';
 
 import loadable from '@loadable/component';
@@ -10,6 +9,7 @@ const ProjectCard = loadable(() =>
 );
 
 import { motion } from 'framer-motion';
+import { fullName } from '../shared/constants';
 
 class Projects extends React.Component {
   constructor() {
@@ -116,7 +116,7 @@ class Projects extends React.Component {
     return (
       <>
         <Head>
-          <title>Irene Truong | Projects</title>
+          <title>{fullName} | Projects</title>
         </Head>
 
         <section className="projects-container">

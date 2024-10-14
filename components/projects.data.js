@@ -1,3 +1,5 @@
+import { fullName } from '../shared/constants';
+
 const PROJECTS_DATA = [
   {
     id: 0,
@@ -43,10 +45,10 @@ const PROJECTS_DATA = [
   },
   {
     id: 6,
-    title: "Irene Truong's Portfolio",
+    title: `${fullName}'s Portfolio`,
     imagePath: '/images/project-previews/ITPortfolioTwo.jpg',
     description:
-      "This site! I wanted to build from scratch what I've learned over the years. Designed by <a href='https://ca.linkedin.com/in/huajoey' target='_blank' rel='noopener noreferrer'>Joey Hua, UX Designer</a>. Feel free to view the source code to see how I decided to refactor as I went along with the build.",
+      "This site! Designed by <a href='https://ca.linkedin.com/in/huajoey' target='_blank' rel='noopener noreferrer'>Joey Hua, UX Designer</a>. Feel free to view the source code to see how I decided to refactor as I went along with the build.",
     skills: [
       'React.js',
       'Next.js',
@@ -103,7 +105,7 @@ const PROJECTS_DATA = [
     githubUrl: 'https://github.com/irenecodes/jh-portfolio',
   },
   {
-    id: 7,
+    id: 16,
     title: 'Single Page PSD Conversion - Arora Jewlers',
     imagePath: '/images/project-previews/AroraJewlers.jpg',
     description:
@@ -113,7 +115,7 @@ const PROJECTS_DATA = [
     githubUrl: 'https://github.com/irenecodes/Arora-Jewlers',
   },
   {
-    id: 16,
+    id: 18,
     title: 'Pet Lims',
     imagePath: '/images/project-previews/PetLims.jpg',
     description:
@@ -130,7 +132,7 @@ const PROJECTS_DATA = [
     githubUrl: 'https://github.com/irenecodes/Pet-Lims',
   },
   {
-    id: 18,
+    id: 20,
     title: "Who's That Pokémon?",
     imagePath: '/images/project-previews/WhosThatPokemon.jpg',
     description:
@@ -151,7 +153,7 @@ const PROJECTS_DATA = [
       'https://github.com/the-best-doduo/harry-grewal-irene-truong-project-4',
   },
   {
-    id: 20,
+    id: 22,
     title: 'Multi-Page PSD Conversion - Captured',
     imagePath: '/images/project-previews/Captured.jpg',
     description: 'PSD to HTML/CSS Conversion. Design provided by HackerYou.',
