@@ -3,12 +3,13 @@ import Head from 'next/head';
 import LazyLoad from 'react-lazyload';
 
 import { motion } from 'framer-motion';
+import { fullName } from '../shared/constants';
 
 export default function Contact() {
   return (
     <>
       <Head>
-        <title>Irene Truong | Contact</title>
+        <title>{fullName} | Contact</title>
       </Head>
       <LazyLoad height={300}>
         <div className="contact-hero"></div>

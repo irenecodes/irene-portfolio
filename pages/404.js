@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Head from 'next/head';
+import { fullName } from '../shared/constants';
 
 import { motion } from 'framer-motion';
 const svgVariants = {
@@ -48,7 +49,7 @@ export default function Custom404() {
   return (
     <>
       <Head>
-        <title>Irene Truong | Web Developer</title>
+        <title>{fullName} | Web Developer</title>
       </Head>
       <section className="error-section">
         <motion.svg

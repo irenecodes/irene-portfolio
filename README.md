@@ -11,6 +11,8 @@ Features:
 - Built in Next.js
 - ES6, React Hooks
 - Active classes for navigation, and for project filter on select
-- Filter projects by selection
+- Filter projects by skill selection
 - 404 page if you try to go to a non-existing page
 - Transitions: Fade in project cards in /project page, when going to another page, SVG tracing on /project and /404
+
+**Last content update**: October 2024.
